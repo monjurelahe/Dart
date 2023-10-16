@@ -1,0 +1,16 @@
+import 'dart:io';
+
+void main() {
+  print('Bismillahir Rahmanir Rahim');
+  var a = first();
+  a.b('Bismillah');
+  a.b('My start');
+  a.b('Beginning');
+  a.b('Hope for the best');
+}
+
+class first {
+  void b(String name) {
+    print(name);
+  }
+}
