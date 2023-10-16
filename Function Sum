@@ -1,0 +1,15 @@
+import 'dart:io';
+
+void main() {
+  print('Bismillahir Rahmanir Rahim');
+  var a = FirstC();
+  print(a.Add(1, 2));
+  print(a.Add(5, 2));
+}
+
+class FirstC {
+  int Add(int x, int y) {
+    int sum = x + y;
+    return sum;
+  }
+}
