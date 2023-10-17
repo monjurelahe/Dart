@@ -1,0 +1,38 @@
+import 'dart:io';
+
+void main() {
+  var int1 = [1, 2, 3, 4, 5];
+  int1.add(12); //list e new Value add kora
+
+  var name = []; //Notun list banano and ekhane ager tar Value copy korbo
+  name.add('Mugdho'); //Value add kora
+  name.add('Bou');
+  name.addAll(int1); //1ta list er Value copy kore notun list e store kora
+
+  name[1] = 'Mugdhor Bou'; // Value Update kora
+
+  name.insert(3, 'Monjur'); // Desired position e Element store kora
+  name.insertAll(2,
+      int1); // Desired position e Element hisebe onek value ba list store kora
+
+  print('$int1');
+  print('$name');
+
+  name.replaceRange(2, 6,
+      ['Ami', 'Banda', 'Saccha', 'asd', 'ghn', 'jhg']); //Value Replace kora
+
+  //REMOVE er kaj
+  name.removeLast();
+  name.remove(3);
+  name.removeAt(5);
+  name.removeRange(7, 10);
+
+  print('$name');
+  print('Length: ${name.length}');
+  print('Reversed: ${name.reversed}');
+  print('First: ${name.first}');
+  print('Last: ${name.last}');
+  print('Is Empty check: ${name.isEmpty}');
+  print('Is Not Empty check: ${name.isNotEmpty}');
+  print('Second Elem: ${name.elementAt(2)}');
+}
