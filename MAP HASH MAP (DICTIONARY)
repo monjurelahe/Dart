@@ -1,0 +1,24 @@
+import 'dart:io';
+
+void main() {
+/*  var mapName = {
+    'Key1': 'Monjur',
+    'Key2': 'Mugdho',
+    'Key3': 'Ami',
+    'Key4': 'Banda'
+  };
+*/
+  var mapName = {};
+  mapName['a'] = 'MG';
+  mapName['b'] = 'MN';
+  mapName['c'] = 'MU';
+  mapName['d'] = 'MM';
+  mapName['e'] = 'MO';
+
+  print(mapName);
+  print(mapName.isNotEmpty);
+  print(mapName.isEmpty);
+  print(mapName.length);
+  print(mapName.keys);
+  print(mapName.values);
+}
